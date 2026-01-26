@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            padding: 2px;
+            margin: 2px;
+            border: solid black 2px;
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+        }
+
+        .item{
+            border: solid black 1px;
+        }
+
+        img{
+            height: 150px;
+            width: 150px;
+        }
+        #a{ 
+            height: 150px;
+            width: 150px;
+        }
+        #b{
+            height: 150px;
+            width: 150px;
+        }
+
+        @media (max-width:640px) {
+            .box{
+            padding: 2px;
+            margin: 2px;
+            border: solid black 2px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .item{
+            border: solid black 1px;
+        }
+
+        img{
+            height: 150px;
+            width: 150px;
+        }
+
+        #b{
+            height: 150px;
+            width: 150px;
+        }
+        #a{
+            width: 150px;
+            height: 150px;
+
+        }
+    }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="box">
+        <div class="item" id="a">
+            <p>Text 1</p>
+            <p>Text 2</p>
+        </div>
+        <div class="item" id="b">
+            <img src="passport.jpg" alt="pj">
+        </div>
+    </div>
+</body>
+</html>
