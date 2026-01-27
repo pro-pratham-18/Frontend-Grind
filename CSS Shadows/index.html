@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+
+    <style>
+        .container{
+            border: solid black 2px;
+            height: 650px;
+            padding: 2px;
+            margin: 2px;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            /* --primary-color:rgb(12, 10, 10);
+            --primary-width:300px */
+
+            padding: 2px;
+            box-shadow: 1px 1px 20px rgb(36, 17, 179) ;
+            margin: 2px;
+            background-color: rgb(0, 0, 0);
+            /* width: var(--primary-width); */
+            height: 300px;
+            width: 300px;
+            border: solid black 1px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center
+            /* border: solid var(--primary-color) 1px ;  */
+            /* box-shadow: 10px 10px grey; */
+            /* box-shadow: 2px 2px 20px 10px rgb(139, 139, 132); */
+            /* box-shadow: 5px 5px yellow,10px 10px red; */
+        }
+
+        h1{
+            /* text-shadow:2px 2px white; */
+            /* text-shadow: yellow 2px 2px 3px*/
+            /* text-shadow: yellow 2px 2px; */
+            /* text-shadow: 2px 2px; */
+            /* text-shadow: 1px 1px yellow, 2px 2px ; */
+            color: white;
+            /* text-shadow: 2px 2px 1px 2px rgb(224, 224, 112); */
+            text-shadow: #25ff30 1px 0px 10px ; 
+
+
+        }
+
+        #para1{
+            /* text-shadow:1.5px 1.5px  white; */
+            color: white;
+            text-shadow: 1px 0px 7px yellow;
+        }
+
+        #img1{
+            height: 100px;
+            width: 100px;
+            /* border: solid rgb(255, 255, 255) 1px; */
+            box-shadow: 1px 1px 20px  rgb(251, 255, 134);
+        }
+
+        
+            #head2{
+                color: white;
+                text-shadow: 1px 0px 10px rgb(53, 255, 80), 1px 1px red;
+            }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="trvel.jpg" alt="pj" id="img1">
+            <h1>Through The fields</h1>
+            <p id="para1">In my village , near the well.</p>
+            <h3 id="head2">Prathamesh Joshi</h3>
+    </div>
+</body>
+</html>
