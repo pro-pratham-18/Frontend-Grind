@@ -79,11 +79,12 @@
     align-items: center;
   }
   #kaju {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 40px;
     box-shadow: 1px 0px 20px black;
   }
+
   #kajulist1 {
     list-style: inside;
   }
@@ -94,3 +95,36 @@
     gap: 10px;
     align-items: center;
   }
+  .box2{
+    transition: all 0.5s ease 0s ;
+    position: relative;
+
+  }
+  .box2:hover{
+    transform: scale(1.1);
+  }
+  .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    background-color:  rgba(157, 154, 154, 0.512);
+    transition: all 0.6s ease 0s;
+    display: flex;
+    width: 100%;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+  .overlay:hover{
+    opacity: 1;
+  }
+  
+
+
+  #buy{
+    text-decoration: none;
+    color: azure;
+  }
+  
