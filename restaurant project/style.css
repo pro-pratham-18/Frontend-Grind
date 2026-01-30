@@ -1,130 +1,126 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  #navlist {
-    background: #2a7b9b;
-    background: linear-gradient(
-      90deg,
-      rgba(42, 123, 155, 1) 0%,
-      rgba(87, 199, 133, 1) 50%,
-      rgba(237, 221, 83, 1) 100%
-    );
-    list-style: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navlist {
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  list-style: none;
+}
 
-  .container {
-    height: 100%;
-    width: 100%;
-  }
+.container {
+  height: 100%;
+  width: 100%;
+}
 
-  #navlist {
-    padding: 10px;
-    background-color: chartreuse;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-  }
+#navlist {
+  padding: 10px;
+  background-color: chartreuse;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
 
-  #ref1 {
-    display: flex;
-    gap: 20px;
-  }
+#ref1 {
+  display: flex;
+  gap: 20px;
+}
 
-  #para1 {
-    color: aliceblue;
-    font-size: 25px;
-  }
-  .acnh {
-    color: white;
-    text-decoration: none;
-  }
-  .footclass {
-    display: flex;
-    background: #2a7b9b;
-    background: linear-gradient(
-      90deg,
-      rgba(42, 123, 155, 1) 0%,
-      rgba(87, 199, 133, 1) 50%,
-      rgba(237, 221, 83, 1) 100%
-    );
-    color: white;
-    position: relative;
-    font-size: 12px;
-    justify-content: center;
-    align-items: center;
-    min-height: 50px;
-  }
-  .contentbox {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 70%;
-    margin: auto;
-    /* border: solid black 2px; */
-    background: #eeaeca;
-    background: radial-gradient(
-      circle,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%
-    );
-    box-shadow: 1px 1px 25px black;
-  }
-  .box {
-    gap: 20px;
-    padding: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  #kaju {
-    width: 250px;
-    height: 250px;
-    border-radius: 40px;
-    box-shadow: 1px 0px 20px black;
-  }
+#para1 {
+  color: aliceblue;
+  font-size: 25px;
+}
+.acnh {
+  color: white;
+  text-decoration: none;
+}
+.footclass {
+  display: flex;
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  color: white;
+  position: relative;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+}
+.contentbox {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 70%;
+  margin: auto;
+  /* border: solid black 2px; */
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  box-shadow: 1px 1px 25px black;
+}
+.box {
+  gap: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#kaju {
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+  box-shadow: 1px 0px 20px black;
+}
 
-  #kajulist1 {
-    list-style: inside;
-  }
-  .box1 {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-  .box2{
-    transition: all 0.5s ease 0s ;
-    position: relative;
+#kajulist1 {
+  list-style: inside;
+}
+.box1 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.box2 {
+  transition: all 0.5s ease 0s;
+  position: relative;
+}
+.box2:hover {
+  transform: scale(1.1);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(157, 154, 154, 0.512);
+  transition: all 0.6s ease 0s;
+  display: flex;
+  width: 100%;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.overlay:hover {
+  opacity: 1;
+}
 
-  }
-  .box2:hover{
-    transform: scale(1.1);
-  }
-  .overlay{
-    position: absolute;
-    top:0;
-    left:0;
-    height: 100%;
-    background-color:  rgba(157, 154, 154, 0.512);
-    transition: all 0.6s ease 0s;
-    display: flex;
-    width: 100%;
-    border-radius: 40px;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-  }
-  .overlay:hover{
-    opacity: 1;
-  }
-  
-
-
-  #buy{
-    text-decoration: none;
-    color: azure;
-  }
-  
+#buy {
+  text-decoration: none;
+  color: azure;
+}
