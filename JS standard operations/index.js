@@ -21,17 +21,15 @@
 // console.log(a==b);                    True
 // console.log(a===b);                   False
 
-// let a=Number(prompt("Enter the Number"));
-// console.log(a*2);
-
-// const readline =require("readline");
-// console.log(readline);
  
+//ternary operator
+
 // let age=20;   
 // (age>18)?console.log("you can vote"):console.log("you cannnot vote");  ternary operator
 
 //logical op same as cpp
 
+//operators in Js
 
 // bitwise and or not xor , & | ~ 
 
@@ -70,9 +68,52 @@
 //     default: console.log('D');
 // }
 
+// for(let i=1;i<=10;i++){
+//     console.log("hello there")
+// }
+
+// arr=["hello","are","you"];
+// console.log(arr.join(","));
+
+// function alter(a){
+//     a+=4;
+//     console.log("altered",a);
+// }
+// alter(6);
+
+// function add(num1,num2){
+//     return num1+num2;
+    
+// }
+ 
+// console.log(add(4,5));
+
+// function for string concatenation and dynapically typing{adjusting of the variable type as per the input}
+
+// function concat(k1,k2){
+//     return k1+k2;
+// }
+// console.log(concat("hello","there"));
+// console.log(concat(7,5));
+
+// function concat(k1,k2){
+//     return k1+k2+"hi";
+// }
+// console.log(concat("hello","there"));
+// console.log(concat(7,5));
+
+// let power1 = (x,y)=>{             arrow function in js 
+//     return x**y;
+// }
+// console.log(power1);
 
 
+// let square = (a)=>{
+//     return a**2;
+// }
 
+// let a=square(5);
+// console.log(a);
 
 
 
