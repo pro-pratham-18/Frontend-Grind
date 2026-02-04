@@ -180,7 +180,7 @@
 // })
 // console.log(count);
 
-arr= [1,3,52,7,5];
+// arr= [1,3,52,7,5];
 // let array=arr.filter((num)=>{
 //     return num%2==0;
 // })
@@ -206,8 +206,28 @@ arr= [1,3,52,7,5];
 // console.log(arr.sort((a,b)=>a-b));                 ascending
 // console.log(arr.sort((a,b)=>b-a));                 descneding
 
+// let arr=[2,3,4,5,6,76];
+// count=0;
+// for(val of arr){
+//     count+=val;
+// }
+// console.log(count);
+
+// obj={
+//     name:"prathamesh",
+//     age:20
+// }
+// for(i in obj ){
+//     console.log(i," ",obj[i]);
+// }
+// console.log(obj.name)
 
 
+// a=[57,65,2,9,3];
+// sum=0;
+// a.forEach(num => {
+//     sum+=num;                       //array sum using for each
+// });
 
+// console.log(sum);
 
- 
