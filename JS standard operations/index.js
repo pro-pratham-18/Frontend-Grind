@@ -116,6 +116,96 @@
 // console.log(a);
 
 
+// console.log(sum1(3,4));
+// function sum1(a,b){
+//     return a+b;
+// }
+
+// sum1();
+
+// obj={
+//     name:"prathamesh joshi",
+//     age:20,
+//     height:"5'11",
+//     // sum: function add(a,b){
+//     //     return a+b;
+//     // }
+//     address:{
+//         city:"indoore"
+//     }
+// };
+// obj2={...obj};                     shallow copy
+// obj2=obj;                          full reference copy
+// obj2=structuredClone(obj);            //deep copy
+// obj2.name="Umesh Joshi";
+// obj2.address.city="mumbai";
+// console.log(obj);
+
+// console.log(obj.name);
+// console.log(obj.sum);
+// console.log(obj.height);
+// console.log(typeof(obj));
+
+// arr=["hello",56];
+
+// arr=new Array("hello",'there',65,45);
+// let a=arr1.shift();
+// console.log(arr1,a);
+// console.log(arr);
+
+// console.log(arr.slice(1));        //from index 1 to last
+// console.log(arr.slice(1,2));        //from index 1 to 1 , ek pehle tak
+
+// obj={
+//     name:"prathamesh",
+//     age:20,
+//     array: [1,3,5,7,9]
+// }
+
+// obj2={...obj};
+// obj2.array[3]=11;
+// console.log(obj);
+
+// arr= [1,3,52,7,9];
+// // arr.splice(1,3,"hello");         //ndex 1 aur uske baad se 3 values remove kr do aur waha hell insert kr do
+// arr.splice(2,0,"hello");            //index 2 se kuch mat hatao aur waha hello add kr doo
+// console.log(arr)   
+
+// let a=Number.MIN_SAFE_INTEGER;
+
+
+// count=0;
+// arr.map((num)=>{
+//     count+=num;                          //array sum usinng map function
+// })
+// console.log(count);
+
+arr= [1,3,52,7,5];
+// let array=arr.filter((num)=>{
+//     return num%2==0;
+// })
+
+// let array=arr.filter((num)=>{
+//     if(typeof(num)==='number'){
+//         return num;
+//     }
+// })
+// console.log(array);
+
+// let a=arr.reduce((acc,curr)=>{            //multiplication using reduce
+//     return acc*curr;
+// })
+// console.log(a);
+
+// let a=arr.reduce((acc,curr)=>{            //addition using reduce
+//     return acc+curr; 
+// })
+// arr= [1,3,52,7,5];
+
+// console.log(arr.sort());                           lexicographical
+// console.log(arr.sort((a,b)=>a-b));                 ascending
+// console.log(arr.sort((a,b)=>b-a));                 descneding
+
 
 
 
