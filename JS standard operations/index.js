@@ -202,9 +202,9 @@
 // })
 // arr= [1,3,52,7,5];
 
-// console.log(arr.sort());                           lexicographical
-// console.log(arr.sort((a,b)=>a-b));                 ascending
-// console.log(arr.sort((a,b)=>b-a));                 descneding
+// console.log(arr.sort());                          // lexicographical
+// console.log(arr.sort((a,b)=>a-b));                // ascending
+// console.log(arr.sort((a,b)=>b-a));                // descneding
 
 // let arr=[2,3,4,5,6,76];
 // count=0;
@@ -230,4 +230,57 @@
 // });
 
 // console.log(sum);
+
+
+// console.log(a);
+// var a="hello";
+
+// class Student{
+//     name;
+//     age;
+//     rollno;
+
+    // constructor(){
+    //     console.log("non-para-meterized Constructor");
+    // }
+
+//     constructor(name,age,rollno){
+//         this.name=name;
+//         this.age=age;
+//         this.rollno=rollno;
+//     }
+
+//     printInfo(){
+//         console.log("Name:",this.name);
+//         console.log("Age:",this.age);
+//         console.log("Roll No :",this.rollno);
+//     }
+
+//     printInfo1(s){
+//         console.log("Name:",s.name);               //function with object
+//         console.log("Age:",s.age);
+//         console.log("Roll No :",s.rollno);
+//     }
+
+
+
+// }
+
+//  s1=new Student("rohan",20,48);
+//  s2=new Student("sohan",22,49);
+//  s3=new Student("mohan",25,50);
+//  s4=new Student();
+
+//  s1.printInfo();
+//  s2.printInfo1(s2);                             //object as an argument
+// console.log(typeof(s1));
+// //  s4.printInfo();
+
+
+
+
+
+
+
+
 
