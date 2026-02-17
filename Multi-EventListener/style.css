@@ -1,0 +1,35 @@
+
+*{
+margin: 0px;
+
+}
+.container{
+    padding: 15px;
+    background-color: chartreuse;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+.box1{
+    padding: 10PX;
+    background-color: orange;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.box2{
+    padding: 10px;
+    background-color: rgb(21, 84, 192);
+    height:200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.box3{
+    padding: 10px;
+    background-color: rgb(198, 13, 22);
+    height:100px;
+    width: 100px;
+    border-radius: 10px;
+}
