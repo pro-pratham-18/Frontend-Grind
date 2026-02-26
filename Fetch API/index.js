@@ -60,19 +60,19 @@
 // we can use http request like get ,post in an async function using await to make them run sequentially as they both are async codes
 
 
-url="https://jsonplaceholder.typicode.com/posts";
+url="http://localhost:3000/";
 
-obj={username:"prathamesh",
-    email:"example@gmail.com"
-}
+// obj={username:"prathamesh",
+//     email:"example@gmail.com"
+// }
  
-const options={
-    method:"POST",
-    body:JSON.stringify(obj),
-    headers:{
-        "Content-Type":"application/json" 
-    }
-};
+// const options={
+//     method:"POST",
+//     body:JSON.stringify(obj),
+//     headers:{
+//         "Content-Type":"application/json" 
+//     }
+// };
 async function get_data(){
     response=await fetch(url);
     data= await response.json();                             // pnt: response.json is an sync function , function specifically  always use it as response.json();                            
@@ -80,15 +80,18 @@ async function get_data(){
 }
 
 
-async function post_data(){
-    response=await fetch(url,options);
-    data= await response.json();
-    console.log("My Data:",data);
-}
 
-async function process_data(){
-    await post_data();
-    await get_data();
-}
+// async function post_data(){
+//     response=await fetch(url,options);
+//     data= await response.json();
+//     console.log("My Data:",data);
+// }
 
-process_data();
+// async function process_data(){
+//     await post_data();
+//     await get_data();
+// }
+
+// process_data();
+get_data();
+
