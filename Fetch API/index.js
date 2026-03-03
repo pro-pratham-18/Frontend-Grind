@@ -60,38 +60,57 @@
 // we can use http request like get ,post in an async function using await to make them run sequentially as they both are async codes
 
 
-url="http://localhost:3000/";
+url="http://localhost:3000/notes";
+url2="http://localhost:3000/notes";
 
-// obj={username:"prathamesh",
-//     email:"example@gmail.com"
-// }
+obj={username:"prathamesh",
+    email:"example@gmail.com",
+    age:20
+}
+
  
-// const options={
-//     method:"POST",
-//     body:JSON.stringify(obj),
+const options1={
+    method:"POST",
+    body:JSON.stringify(obj),
+    headers:{
+        "Content-Type":"application/json"
+    }
+};
+
+// const options2={
+//     method:"DELETE",
 //     headers:{
 //         "Content-Type":"application/json" 
 //     }
 // };
 async function get_data(){
     response=await fetch(url);
-    data= await response.json();                             // pnt: response.json is an sync function , function specifically  always use it as response.json();                            
+    data= await response.json();                             // pnt: response.json() and fetch() both are async function, the value of data/response in js variable gets stored when they get resolved with data/response values.               
     console.log("My Data:",data);
 }
 
 
-
 // async function post_data(){
-//     response=await fetch(url,options);
+//     response=await fetch(url,options1);
+//     data= await response.json();
+//     console.log("My Data:",data);
+// }
+// async function delete_data(){
+//     response=await fetch(url2,options2);
 //     data= await response.json();
 //     console.log("My Data:",data);
 // }
 
 // async function process_data(){
 //     await post_data();
+//     await post_data();
+//     await post_data();
+//     await get_data();
+//     await delete_data()
 //     await get_data();
 // }
 
-// process_data();
-get_data();
 
+
+get_data();
+// process_data();
