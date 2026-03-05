@@ -46,8 +46,8 @@
   background: linear-gradient(
     90deg,
     rgba(42, 123, 155, 1) 0%,
-    rgba(87, 199, 133, 1) 50%,
-    rgba(237, 221, 83, 1) 100%
+    rgba(87, 199, 133, 1) 50%, 
+    rgba(237, 221, 83, 1) 100,
   );
   color: white;
   position: relative;
@@ -70,6 +70,7 @@
     rgba(148, 187, 233, 1) 100%
   );
   box-shadow: 1px 1px 25px black;
+
 }
 .box {
   gap: 20px;
@@ -108,7 +109,6 @@
   left: 0;
   height: 100%;
   background-color: rgba(157, 154, 154, 0.512);
-  transition: all 0.6s ease 0s;
   display: flex;
   width: 100%;
   border-radius: 40px;

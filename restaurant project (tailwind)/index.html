@@ -1,31 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant project</title>
-</head>
-<body>
-    <div id="container" class="h-dvh w-dvw bg-amber-100">
-        <div id="header">
-          <div id="navcontainer" class=" p-1 h-10 bg-linear-to-r from-cyan-500 to-yellow-500">
-            <nav id="navlist">
-                <ul class=" flex ali justify-between " id="ulst">
-                    <li><p class= "pl-3 text-white  text-2xl font-serif" >Joshi Restaurant</p></li>
-                    <li class="flex items-center">
-                        <div id="box" class=" pr-3 flex gap-5 ">
-                            <a href="#" class=" text-white font-serif">Home</a>
-                            <a href="#" class="text-white font-serif"> Contact</a>
-                            <a href="#" class="text-white font-serif">Login </a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+  </head>
+  <body>
+    <div id="container" class="h-full w-full bg-amber-100">
+
+      <header>
+        <div id="navcontainer" class="p-2 bg-linear-to-r from-cyan-500 to-yellow-500">
+          <nav id="navlist">
+            <ul class="flex justify-between" id="ulst">
+              <li>
+                <p class="pl-3 text-white font-serif text-2xl">Joshi Restaurant</p>
+              </li>
+              <li class="flex items-center">
+                <div id="box" class="pr-3 flex gap-5">
+                  <a href="#" class="text-white font-serif text-xl">Home</a>
+                  <a href="#" class="text-white font-serif text-xl"> Contact</a>
+                  <a href="#" class="text-white font-serif text-xl">Login </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main>
+      <div id="contentbox" class=" p-10 bg-linear-to-t from-blue-500 to-purple-200 mx-25 flex flex-col gap-15 shadow-xl shadow-gray-700/80">
+      <div id="kajukatli" class="flex justify-between">
+        <div id="box1" class="flex flex-col justify-between" >
+          <div id="head" class="flex flex-col items-center">
+            <p class="text-2xl font-bold">Kaju Katli</p>
+            <h2 class="w-fit text-gl font-bold">Ingredients</h2>
+            <ul class=" list-inside list-disc" >
+              <li class="text-xs">kaju</li>
+              <li class="text-xs">Milk</li>
+              <li class="text-xs">Sugar</li>
+            </ul>
+          </div>
+          <h2 class="text-gl font-bold font-">Recipie</h2>
+          <div id="recipie">
+            <ol class="list-inside list-decimal">
+              <li class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+              <li class="text-xs">Lorem ipsum dolor sit amet.</li>
+              <li class="text-xs">Lorem ipsum dolor sit amet consectetur.</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div id="box2" class="group relative w-60 h-50 hover:scale-110 duration-300 shadow-xl shadow-gray-700/80 rounded-2xl">
+          <img src="kjuktl.webp" alt="kajukatli" class="h-50 w-60 rounded-2xl" >
+          <div id="overlay" class="h-full w-full absolute flex justify-center items-center bg-gray-300 inset-0 rounded-2xl opacity-0 group-hover:opacity-50 duration-300">
+            <a href="#"><span>Click Here To Buy</span></a>
+          </div>
         </div>
       </div>
+
+      <div id="rasmalai" class="flex justify-between">
+        <div id="box1" class="flex flex-col justify-between" >
+          <div id="head" class="flex flex-col items-center">
+            <p class="text-2xl font-bold">Ras Malai</p>
+            <h2 class="text-gl font-bold">Ingredients</h2>
+            <ul class=" list-inside list-disc" >
+              <li class="text-xs">malai</li>
+              <li class="text-xs">Milk</li>
+              <li class="text-xs">Sugar</li>
+            </ul>
+          </div>
+          <h2 class="text-gl font-bold font-">Recipie</h2>
+          <div id="recipie">
+            <ol class="list-inside list-decimal">
+              <li class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+              <li class="text-xs">Lorem ipsum dolor sit amet.</li>
+              <li class="text-xs">Lorem ipsum dolor sit amet consectetur.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="box2" class="group relative w-60 h-50 hover:scale-110 duration-300 shadow-xl shadow-gray-700/80 rounded-2xl">
+          <img src="rasmali.webp" alt="kajukatli" class="h-full w-full rounded-2xl" >
+          <div id="overlay" class="h-full w-full absolute flex justify-center items-center bg-gray-300 inset-0 rounded-2xl opacity-0 group-hover:opacity-50 duration-300">
+            <a href="#"><span>Click Here To Buy</span></a>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="container" class="py-5 bg-linear-to-r from-cyan-500 to-yellow-500 flex justify-center items-center">
+        <p class="text-xs text-white">© Joshi Restaurant 2026 , all rights reserved</p>
+      </div>
+    </footer>
     </div>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-</body>
+  </body>
 </html>
