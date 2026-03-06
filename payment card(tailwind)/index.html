@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>paymentcard</title>
+  </head>
+  <body>
+    <div id="container" class="h-dvh w-dvw bg-linear-to-t from-sky-300 to-indigo-300 flex justify-center items-center ">
+      <div id="box" class="h-85 w-55 bg-white rounded-xl shadow-[0_0_15px_rgba(105,105,105,0.8)] flex flex-col">
+        <img src="icon.jpg" alt="music" class="h-25 w-full  rounded-t-xl">
+        <div id="textbox" class="p-5 py-6 flex flex-col flex-1 items-center justify-between gap-3">
+          <h2 class="text-[1.2rem] font-[Times_New_Roman] font-bold">Order Summary</h2>
+          <div id="midpara">
+            <p class="text-[0.7rem] text-center text-xs font-[Times_New_Roman]">In order to initiate the payment for the required subscription, select the proceed for the payment option below</p>
+          </div>
+          <div id="cyan" class="bg-cyan-100 flex justify-evenly w-full rounded-[0.4rem]">
+            <div id="music" class="flex items-center">
+              <img src="music.png" alt="" class="h-7 w-7">
+            </div>
+            <div id="annual" class="flex flex-col">
+              <p class="text-[0.7rem] font-[Times_New_Roman]  ">Annual Plan</p>
+              <p class="text-[0.7rem] font-[Times_New_Roman] ">$99.9/year</p>
+            </div>
+            <div id="change" class="flex flex-col justify-center">
+              <a href="#" class="text-xs font-[Times_New_Roman] "><p class="hover:scale-110 duration-300 ">Change</p></a>
+            </div>
+          </div>
+          <div id="payment" class="bg-[rgb(22,22,79)] w-full p-2 rounded-lg shadow-[0_0_25px_rgba(105,105,105,0.8)] hover:scale-105 duration-300">
+            <a href="#"><p class="text-xs text-white font-[Times_New_Roman] text-center">Proceed For Payment</p></a>
+          </div>
+          <div id="cancel" class="hover:scale-105 duration-300">
+            <a href="#"><p class="text-xs font-[Times_New_Roman]">Cancel Order</p></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
