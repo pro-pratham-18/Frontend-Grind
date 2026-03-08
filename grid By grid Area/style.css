@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+#head{
+    grid-area: h;
+}
+#side{
+    grid-area: s;
+}
+#c1{
+    grid-area: c1;
+}
+#c2{
+    grid-area: c2;
+}
+#c3{
+    grid-area: c3;
+}
+#foot{
+    grid-area: f;
+}
+.box{
+    background-color: blue;
+}
+.container{
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "h h h"
+    "s c1 c1"
+    "s c2 c3"
+    "f f f"
+    ;
+}
