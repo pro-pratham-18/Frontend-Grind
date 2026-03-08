@@ -19,7 +19,12 @@
   justify-content: space-between;
   font-size: 20px;
 }
-
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   
 #ref1 {
   display: flex;
@@ -41,6 +46,9 @@
 #h2,#para1{
     text-shadow: 10px 10px 15px rgba(105,105,105,0.5);
     color: white;
+}
+#para1{
+    max-width: 400px;
 }
 .main{
     display: flex;
@@ -73,8 +81,9 @@
     width:80%;
     margin: auto;
     gap: 0.7rem;
-    grid-template-columns: repeat(4,10rem);
-    grid-template-rows: repeat(2,20rem);
+    /* grid-template-columns: repeat(4,11rem); */
+    grid-template-columns: repeat(auto-fill,minmax(200px,200px));
+    /* grid-template-rows: repeat(2,20rem); */
     border-radius: 0.4rem;
     background-color: rgb(15, 63, 93);
     place-content: center;
@@ -110,12 +119,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 45%;
-    padding: 0.6rem;
+    padding: 0.4rem;
     border: solid gray 0.5px;
     border-bottom-left-radius: 0.4rem;
     border-bottom-right-radius: 0.4rem;
 }
-.mid_anch{
+.mid_anch{ 
     text-align: center;
     text-decoration: none;
     color: black;
@@ -184,4 +193,34 @@
   justify-content: center;
   align-items: center;
   min-height: 50px;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#020617;
+}
+
+.navbar nav a{
+margin:0 15px;
+text-decoration:none;
+color:#cbd5f5;
+font-size:16px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.btn{
+padding:10px 18px;
+background:#38bdf8;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
 }
