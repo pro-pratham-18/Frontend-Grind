@@ -4,41 +4,13 @@
     box-sizing: border-box;
 }
 
-#navlist {
-  background: #2a7b9b;
-  background: linear-gradient(
-    90deg,
-    rgba(42, 123, 155, 1) 0%,
-    rgba(87, 199, 133, 1) 50%,
-    rgba(237, 221, 83, 1) 100%
-  );
-  list-style: none;
-  padding: 10px;
-  background-color: chartreuse;
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-}
 .head{
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-  
-#ref1 {
-  display: flex;
-  gap: 20px;
-}
-#para2 {
-  color: aliceblue;
-  font-size: 25px;
-}
-.acnh {
-  color: white;
-  text-decoration: none;
-}
-
 .header2{
     padding: 0.5rem;
 
@@ -64,7 +36,7 @@
 
 }
 .head{
-    height: 5rem;
+    height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -223,4 +195,11 @@ border:none;
 border-radius:6px;
 cursor:pointer;
 font-weight:bold;
+}
+.navbar nav{
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(5rem,1fr));
 }
